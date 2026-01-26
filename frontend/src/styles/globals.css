@@ -29,6 +29,10 @@ body {
   cursor: pointer;
 }
 
+.navbar_container{
+    border-bottom: 1px solid var(--gray-color);
+}
+
 @media (max-width: 640px) {
   .btn_primary {
     font-size: 12px;
@@ -67,3 +71,7 @@ body {
     width: 60px;
   }
 }
+
+
+
+/* Hero Section Styles */

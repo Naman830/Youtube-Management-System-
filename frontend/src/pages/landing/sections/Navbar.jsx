@@ -5,7 +5,7 @@ import Logo from "../../../assets/logo/Youtube_logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar_container w-full py-5 fixed bg-black text-white">
+    <nav className="navbar_container w-full py-5 fixed bg-black text-white z-50">
       <div className="navbar flex justify-between items-center lg:mx-16 sm:mx-6 mx-2">
         <div className="navbar_logo flex items-center gap-1 justify-center">
           <figure className="sm:w-12 w-8 ">
