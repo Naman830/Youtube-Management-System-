@@ -22,10 +22,48 @@ body {
   background-color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
-    color: var(--white-color);
-    padding: 10px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
+  color: var(--white-color);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .btn_primary {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar_logo {
+    gap: 0px;
+  }
+  .navbar_logo h2 {
+    font-size: 14px;
+  }
+
+  .navbar_logo figure img {
+    width: 26px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .btn_primary {
+    font-size: 22px;
+    padding: 16px 22px;
+  }
+
+  .navbar_logIn {
+    font-size: 22px;
+  }
+
+  .navbar_logo h2 {
+    font-size: 28px;
+  }
+
+  .navbar_logo figure img {
+    width: 60px;
+  }
 }
