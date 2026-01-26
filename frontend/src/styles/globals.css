@@ -75,3 +75,29 @@ body {
 
 
 /* Hero Section Styles */
+
+
+.hero_btn_start{
+      background-color: var(--primary-color);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white-color);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.hero_btn_video{
+        background-color: transparent;
+  font-weight: 500;
+  border: 2px solid var(--gray-color) !important;
+  font-size: 18px;
+  color: var(--white-color);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
