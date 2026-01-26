@@ -1,8 +1,11 @@
+import Navbar from "./pages/landing/sections/Navbar"
+import Hero from "./pages/landing/sections/Hero"
+
 function App() {
   return (
-    <div className="bg-black w-full h-screen flex items-center justify-center text-white">
-      <h1>Welcome to the App!</h1>
-    </div>
+ <>
+ <Navbar />
+ </>
   )
 }
 
