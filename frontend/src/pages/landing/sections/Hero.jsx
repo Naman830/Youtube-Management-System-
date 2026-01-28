@@ -6,7 +6,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <section className="hero_section relative min-h-screen pt-24 pb-20 overflow-hidden bg-black text-white">
+    <section className="hero_section relative min-h-screen pt-24 pb-20 overflow-hidden text-white">
       <div className="hero_container flex flex-col items-center text-center px-5">
         <div className="hero_animation_container">
           <div className="hero_animation sm:max-w-3xl max-w-2xl mx-auto sm:mb-0 mb-5">
