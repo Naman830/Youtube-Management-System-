@@ -87,7 +87,7 @@ body {
   font-weight: 500;
 }
 
-.hero_section {
+.hero_section, .creator_flow_section {
   background:
     radial-gradient(100% 100% at 0% 0%, rgba(219, 0, 0, 0.25), transparent 60%),
     radial-gradient(
