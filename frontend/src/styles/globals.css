@@ -134,4 +134,14 @@ body {
 .slider-wrapper {
   position: relative;
 }
+.slider_image {
+  width: 100%;
+  max-width: 440px;   /* optional cap for large screens */
+  margin: 0 auto;     /* keeps it centered */
+}
 
+.slider_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
