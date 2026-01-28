@@ -1,43 +1,60 @@
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
+import React, { useRef, useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/navigation";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from "swiper/modules";
 
 export default function App() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
+  useEffect(() => {
+    if (
+      swiperInstance &&
+      prevRef.current &&
+      nextRef.current
+    ) {
+      swiperInstance.params.navigation.prevEl = prevRef.current;
+      swiperInstance.params.navigation.nextEl = nextRef.current;
+
+      swiperInstance.navigation.destroy();
+      swiperInstance.navigation.init();
+      swiperInstance.navigation.update();
+    }
+  }, [swiperInstance]);
 
   return (
     <div className="slider-wrapper">
-      {/* Right-side arrows */}
-      <div className="slider-arrows flex items-center justify-center">
-        <button ref={prevRef} className="arrow-btn"><FaArrowLeftLong /></button>
-        <button ref={nextRef} className="arrow-btn"><FaArrowRight /></button>
+      {/* Header + arrows */}
+      <div className="slider-arrowsr flex justify-between items-center mb-5">
+        <h2 className="text-3xl font-medium">
+          From Idea to Upload
+        </h2>
+
+        <div className="flex gap-3">
+          <button ref={prevRef} className="arrow-btn">
+            <FaArrowLeft />
+          </button>
+          <button ref={nextRef} className="arrow-btn">
+            <FaArrowRight />
+          </button>
+        </div>
       </div>
 
       <Swiper
+        onSwiper={setSwiperInstance}
         slidesPerView={1}
         spaceBetween={30}
-        loop={true}
-        speed={700}                 // smooth premium motion
+        loop
+        speed={700}
         autoplay={{
-          delay: 1400,              // auto-run
+          delay: 1400,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,  // UX win
-        }}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
+          pauseOnMouseEnter: true,
         }}
         modules={[Autoplay, Navigation]}
         className="mySwiper"
