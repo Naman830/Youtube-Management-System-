@@ -1,4 +1,6 @@
 
+import Slider from './Slider.jsx';
+
 const Showcase = () => {
   return (
     <section className="showcase_section relative min-h-screen pt-24 pb-20 overflow-hidden text-white">
@@ -9,6 +11,7 @@ const Showcase = () => {
             </div>
 
             <div className="showcase_slider_container">
+                <Slider />
             </div>
         </div>
     </section>
