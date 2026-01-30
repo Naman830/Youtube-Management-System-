@@ -5,7 +5,7 @@ import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 const CreatorFlow = () => {
   return (
-    <section className="creator_flow_section relative min-h-screen pt-24 pb-24 overflow-hidden  text-white">
+    <section className="creator_flow_section relative min-h-screen pt-24 pb-10 overflow-hidden  text-white">
       
       <div className="creator_flow_container text-center px-5">
         <div className="creator_text_container max-w-7xl mx-auto text-center mb-10">
