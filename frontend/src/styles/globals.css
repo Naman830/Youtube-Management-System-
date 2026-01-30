@@ -142,7 +142,7 @@ body {
 
 /* Creatorflow */
 
-.creator_flow_section {
+.creator_flow_section, .trust_section {
   background: #0b0b0b;
 }
 
