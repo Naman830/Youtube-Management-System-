@@ -15,14 +15,32 @@ const CreatorFlow = () => {
         </div>
 
         {/* Section-part-2 */}
-        <div className="creator_flow_steps max-w-7xl mx-auto ">
-          <div className="creator_steps_container grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  p-5"></div>
-          <CreatorSteps
-            icon={<FaRegUserCircle size={50} className="text-white" />}
-            step="Step 1"
-            heading="Sign Up"
-            paragraph="Create your studio account in seconds"
-          />
+        <div className="creator_flow_steps max-w-7xl mx-auto">
+          <div className="creator_steps_container grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  p-5">
+            <CreatorSteps
+              icon={<FaRegUserCircle size={50} className="text-white" />}
+              step="Step 1"
+              heading="Sign Up"
+              paragraph="Create your studio account in seconds"
+              className="md:col-span-4 col-span-12"
+            />
+
+            <CreatorSteps
+              icon={<FaRegUserCircle size={50} className="text-white" />}
+              step="Step 1"
+              heading="Sign Up"
+              paragraph="Create your studio account in seconds"
+              className="md:col-span-4 col-span-12"
+            />
+
+            <CreatorSteps
+              icon={<FaRegUserCircle size={50} className="text-white" />}
+              step="Step 1"
+              heading="Sign Up"
+              paragraph="Create your studio account in seconds"
+              className="md:col-span-4 col-span-12"
+            />
+          </div>
         </div>
       </div>
     </section>
