@@ -4,6 +4,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 const CreatorFlow = () => {
   return (
     <section className="creator_flow_section relative min-h-screen pt-24 pb-24 overflow-hidden  text-white">
+      
       <div className="creator_flow_container text-center px-5">
         <div className="creator_text_container max-w-7xl mx-auto text-center mb-10">
           <p className="md:text-[22px] sm:text-[20px] md:leading-9 sm:leading-7 text-[18px] leading-5 font-regular mx-auto text-[var(--gray-color)] mb-2">
@@ -16,13 +17,22 @@ const CreatorFlow = () => {
 
         {/* Section-part-2 */}
         <div className="creator_flow_steps max-w-7xl mx-auto">
-          <div className="creator_steps_container grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  p-5">
+        <div className="creator_steps_container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 relative">
+
             <CreatorSteps
               icon={<FaRegUserCircle size={50} className="text-white" />}
               step="Step 1"
               heading="Sign Up"
               paragraph="Create your studio account in seconds"
-              className="md:col-span-4 col-span-12"
+              className=" md:col-span-4 col-span-12 "
+            />
+  
+            <CreatorSteps
+              icon={<FaRegUserCircle size={50} className="text-white" />}
+              step="Step 1"
+              heading="Sign Up"
+              paragraph="Create your studio account in seconds"
+              className="md:col-span-4 col-span-12 "
             />
 
             <CreatorSteps
@@ -30,15 +40,8 @@ const CreatorFlow = () => {
               step="Step 1"
               heading="Sign Up"
               paragraph="Create your studio account in seconds"
-              className="md:col-span-4 col-span-12"
-            />
-
-            <CreatorSteps
-              icon={<FaRegUserCircle size={50} className="text-white" />}
-              step="Step 1"
-              heading="Sign Up"
-              paragraph="Create your studio account in seconds"
-              className="md:col-span-4 col-span-12"
+              className="md:col-span-4 col-span-12 "
+              isLast
             />
           </div>
         </div>
