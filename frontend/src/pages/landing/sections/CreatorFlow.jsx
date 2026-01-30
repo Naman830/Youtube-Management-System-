@@ -1,5 +1,7 @@
 import CreatorSteps from "./CreatorSteps";
 import { FaRegUserCircle } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 const CreatorFlow = () => {
   return (
@@ -23,25 +25,26 @@ const CreatorFlow = () => {
               icon={<FaRegUserCircle size={50} className="text-white" />}
               step="Step 1"
               heading="Sign Up"
-              paragraph="Create your studio account in seconds"
+              paragraph="Yes, Create your studio account in seconds."
               className=" md:col-span-4 col-span-12 "
             />
   
             <CreatorSteps
-              icon={<FaRegUserCircle size={50} className="text-white" />}
-              step="Step 1"
-              heading="Sign Up"
-              paragraph="Create your studio account in seconds"
+              icon={<FaYoutube size={50} className="text-white" />}
+              step="Step 2"
+              heading="Connect (Read-Only)"
+              paragraph="Secure OAuth connection. We verify, we don't post."
               className="md:col-span-4 col-span-12 "
             />
 
             <CreatorSteps
-              icon={<FaRegUserCircle size={50} className="text-white" />}
-              step="Step 1"
-              heading="Sign Up"
-              paragraph="Create your studio account in seconds"
+              icon={<BsFillGrid1X2Fill size={50} className="text-[#db0000]" />}
+              step="Step 3"
+              heading="Manage"
+              paragraph="Deploy SOPs and track production velocity."
               className="md:col-span-4 col-span-12 "
               isLast
+              isGlow
             />
           </div>
         </div>
