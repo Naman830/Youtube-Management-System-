@@ -14,7 +14,13 @@ const Trust = () => {
           </h1>
         </div>
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 items-start justify-center
+          className="   grid
+      grid-cols-1
+      sm:grid-cols-2
+      gap-y-6
+      gap-x-16
+      max-w-3xl
+      mx-auto
           "
         >
           <TrustItem text="Official YouTube API Verified" />
