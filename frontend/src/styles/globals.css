@@ -151,3 +151,15 @@ body {
   max-width: calc(100% - 100px);
   background: #171615;
 }
+
+/* CTA section */
+
+.cta_section{
+   background:
+    radial-gradient(
+      100% 100% at 100% 0%,
+      rgba(219, 0, 0, 0.15),
+      transparent 60%
+    ),
+    #0b0b0b;
+}
