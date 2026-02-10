@@ -1,9 +1,16 @@
-import React from 'react'
+// top-level router
 
-const AppRoutes = () => {
+import { Routes, Route } from "react-router-dom";
+import PublicRoutes from "./PublicRoutes";
+import PrivateRoutes from "./PrivateRoutes";
+import ProtectedRoutes from "./ProtectedRoutes";
+
+export default function AppRoutes() {
   return (
-    <div>AppRoutes</div>
-  )
+    <Routes>
+      <Route path="/*" element={<PublicRoutes />} />
+      {/* <Route path="/auth/*" element={<PrivateRoutes />} /> */}
+      {/* <Route path="/app/*" element={<ProtectedRoutes />} /> */}
+    </Routes>
+  );
 }
-
-export default AppRoutes
