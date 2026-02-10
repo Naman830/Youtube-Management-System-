@@ -1,9 +1,12 @@
-import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import Landing from "../pages/landing/Landing";
 
-const PublicRoutes = () => {
+export default function PublicRoutes() {
   return (
-    <div>PublicRoutes</div>
-  )
+    <Routes>
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Landing />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default PublicRoutes
