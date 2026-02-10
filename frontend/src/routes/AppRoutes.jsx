@@ -2,7 +2,7 @@
 
 import { Routes, Route } from "react-router-dom";
 import PublicRoutes from "./PublicRoutes";
-import PrivateRoutes from "./PrivateRoutes";
+import AuthRoutes from "./AuthRoutes"
 import ProtectedRoutes from "./ProtectedRoutes";
 
 export default function AppRoutes() {
