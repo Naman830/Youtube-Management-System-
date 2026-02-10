@@ -1,5 +1,4 @@
-
-import Slider from './Slider.jsx';
+import Slider from "./Slider"
 
 const Showcase = () => {
   return (

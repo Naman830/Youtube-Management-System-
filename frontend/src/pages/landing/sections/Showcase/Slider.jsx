@@ -1,5 +1,5 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import SliderImg from "../../../assets/images/slider.png";
+import SliderImg from "../../../../assets/images/slider.png"
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import TrustItem from "./TrustItem";
+import TrustItem from "./TrustItem"
 
 const Trust = () => {
   return (
