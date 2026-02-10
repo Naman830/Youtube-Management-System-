@@ -1,21 +1,6 @@
-import Navbar from "./components/layout/Navbar"
-import Hero from "./pages/landing/sections/Hero/Hero"
-import Showcase from "./pages/landing/sections/Showcase/Showcase"
-import CreatorFlow from "./pages/landing/sections/CreatorFlow/CreatorFlow"
-import Trust from "./pages/landing/sections/Trust/Trust"
-import CTA from "./pages/landing/sections/CTA/CTA"
+import AppRoutes from "./routes/AppRoutes";
 
-function App() {
-  return (
- <>
- <Navbar />
- <Hero/>
- <Showcase/>
- <CreatorFlow/>
- <Trust/>
- <CTA/>
- </>
-  )
+// App only knows routes exist.
+export default function App() {
+  return <AppRoutes />
 }
-
-export default App
