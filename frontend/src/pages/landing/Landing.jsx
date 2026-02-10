@@ -12,9 +12,9 @@ export default function Landing() {
       <Navbar />
       <main>
         <Hero />
+        <Showcase />
         <Trust />
         <CreatorFlow />
-        <Showcase />
         <CTA />
       </main>
     </>

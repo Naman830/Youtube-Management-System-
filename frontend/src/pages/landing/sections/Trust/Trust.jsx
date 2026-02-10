@@ -1,5 +1,5 @@
 import React from "react";
-import TrustItem from "./TrustItem"
+import TrustItem from "./TrustItem";
 
 const Trust = () => {
   return (
@@ -21,6 +21,7 @@ const Trust = () => {
       gap-x-16
       max-w-3xl
       mx-auto
+      text-left
           "
         >
           <TrustItem text="Official YouTube API Verified" />
