@@ -13,7 +13,7 @@ export default function PublicRoutes() {
 
       <Route element={<AuthLayout />}>
         {/* // Integrated Both Sign Up an Login Page */}
-        <Route path="/login" element={<AuthForm />} /> 
+        <Route path="/auth" element={<AuthForm />} /> 
         {/* <Route path="/email-verify" element={<EmailVerify />} /> */}
         {/* <Route path="/reset-password" element={<ResetPassword />} /> */}
       </Route>

@@ -8,7 +8,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/*" element={<PublicRoutes />} />
-      <Route path="/auth" element={<ProtectedRoutes />} />
+      <Route path="/authform" element={<ProtectedRoutes />} />
     </Routes>
   );
 }
