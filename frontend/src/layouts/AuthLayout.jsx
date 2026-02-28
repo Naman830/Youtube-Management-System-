@@ -2,28 +2,52 @@ import { Outlet } from "react-router-dom";
 
 export default function AuthLayout() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-950 text-white">
-      
-      {/* Background Accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-transparent to-blue-600/10 blur-3xl opacity-50 pointer-events-none" />
+    <div className="min-h-screen bg-black text-white flex">
 
-      {/* Auth Container */}
-      <div className="relative w-full max-w-md p-8 bg-neutral-900/80 backdrop-blur-xl border border-neutral-800 rounded-2xl shadow-2xl">
-        
-        {/* Logo / Branding */}
-        <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold tracking-tight">
-            Creator Control
-          </h1>
-          <p className="text-sm text-neutral-400 mt-2">
-            Manage your YouTube workflow with clarity.
+      {/* LEFT PANEL */}
+      <div className="hidden lg:flex w-1/2 flex-col justify-center px-24 
+        bg-gradient-to-br from-[#0d0d0d] via-[#120707] to-[#1a0000]
+        border-r border-[#2a0f0f]">
+
+        <h1 className="text-4xl font-bold leading-tight mb-6">
+          Take Control of Your YouTube <br />
+          <span className="text-[#db0000]">Content Machine.</span>
+        </h1>
+
+        <p className="text-gray-400 max-w-md mb-10">
+          Built for creators who treat YouTube like a business — not a hobby.
+          Plan smarter. Execute faster. Scale intentionally.
+        </p>
+
+        <div className="space-y-3 text-sm text-gray-500">
+          <p className="flex items-center gap-2">
+            <span className="text-[#db0000]">●</span> Structured Ideation
+          </p>
+          <p className="flex items-center gap-2">
+            <span className="text-[#db0000]">●</span> Production Workflow
+          </p>
+          <p className="flex items-center gap-2">
+            <span className="text-[#db0000]">●</span> Smart Planning
+          </p>
+          <p className="flex items-center gap-2">
+            <span className="text-[#db0000]">●</span> Personal Creator SOP
           </p>
         </div>
-
-        {/* Form Content */}
-        <Outlet />
-
       </div>
+
+      {/* RIGHT PANEL */}
+      <div className="flex flex-1 items-center justify-center px-6 bg-[#0f0f12]">
+        <div className="w-full max-w-md 
+          bg-[#141414] 
+          border border-[#2a2a2a] 
+          rounded-xl 
+          p-10 
+        ">
+
+          <Outlet />
+        </div>
+      </div>
+
     </div>
   );
 }
