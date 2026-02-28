@@ -9,7 +9,7 @@ import userRouter from "./routes/userRoutes.js";
 // Utils
 
 dotenv.config();
-const port = process.env.PORT || e;
+const port = process.env.PORT || 5173;
 connectDB();
 
 const app = express();

@@ -12,6 +12,7 @@ useEffect(() => {
 }, []);
 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  console.log("Backend URL:", backendUrl);
   const [isLoggedin, setIsLoggedin] = useState(false);
   const [userData, setUserData] = useState(false);
 
